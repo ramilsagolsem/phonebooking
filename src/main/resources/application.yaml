@@ -2,7 +2,7 @@ server:
   port: 9191
 
 api:
-  key: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6ImN1c19OZ3k3amxZdlVqYmtVViIsIm1vZXNpZlByaWNpbmdJZCI6InByaWNlXzFNUXF5dkJESWxQbVVQcE1SWUVWdnlLZSIsImlhdCI6MTY4MTE5MjU3MX0.liEL-Y8I3FuOLsm4l-a9XRmiaUK2jWoIR9Deg_kouIc
+  key: <api key>
 
 spring:
   r2dbc:
