@@ -97,8 +97,8 @@ public class MobileProductService {
                                 System.out.println("productMap " + productMap.get(mobileDto.getName()));
                                 mobileDto.setTechnology(productMap.get(mobileDto.getName()));
                                 mobileRepository.save(AppUtils.mobileDtoToMobile(mobileDto))
-                                        .map(AppUtils::mobileToMobileDto);
-                                System.out.println("Technology updated " + productMap.get(mobileDto.getName()));
+                                        .map(AppUtils::mobileToMobileDto)
+                                        .subscribe(savedMobileDto -> System.out.println("Mobile data saved to DB: " + savedMobileDto.getName()));
                             }
                         }
                         , error -> System.out.println("Error :" + error.getMessage() + ", product : "+mobileDto.getName())
